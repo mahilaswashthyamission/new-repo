@@ -1,0 +1,239 @@
+{
+  "programs": [
+    {
+      "_type": "program",
+      "title": "Education for All Initiative",
+      "slug": { "current": "education-for-all" },
+      "status": "upcoming",
+      "summary": "Providing quality education and learning materials to underprivileged children in rural areas.",
+      "startDate": "2024-12-01",
+      "endDate": "2025-03-31",
+      "location": "Rural Districts, State",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "This program aims to bridge the educational gap by providing free learning materials, tutoring, and infrastructure support to schools in rural areas." }]
+        }
+      ]
+    },
+    {
+      "_type": "program",
+      "title": "Women Empowerment Workshop Series",
+      "slug": { "current": "women-empowerment-2024" },
+      "status": "upcoming",
+      "summary": "Skill development and entrepreneurship training for women in underserved communities.",
+      "startDate": "2024-11-15",
+      "endDate": "2025-02-15",
+      "location": "Multiple Cities",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Empowering women through vocational training, financial literacy, and business development support." }]
+        }
+      ]
+    },
+    {
+      "_type": "program",
+      "title": "Healthcare Outreach Camp",
+      "slug": { "current": "healthcare-outreach-2024" },
+      "status": "upcoming",
+      "summary": "Free medical checkups and health awareness programs in remote villages.",
+      "startDate": "2024-12-10",
+      "endDate": "2024-12-20",
+      "location": "Remote Villages",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Bringing healthcare services to doorsteps with free consultations, medicines, and health education." }]
+        }
+      ]
+    },
+    {
+      "_type": "program",
+      "title": "Clean Water Project 2023",
+      "slug": { "current": "clean-water-2023" },
+      "status": "completed",
+      "summary": "Installation of water purification systems in 20 villages, providing clean drinking water to 5,000 families.",
+      "startDate": "2023-01-15",
+      "endDate": "2023-12-31",
+      "location": "20 Villages, District",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Successfully completed project providing sustainable clean water solutions to rural communities." }]
+        }
+      ]
+    },
+    {
+      "_type": "program",
+      "title": "Digital Literacy Campaign",
+      "slug": { "current": "digital-literacy-2023" },
+      "status": "completed",
+      "summary": "Computer training and digital skills development for 500+ youth and adults.",
+      "startDate": "2023-06-01",
+      "endDate": "2023-11-30",
+      "location": "Community Centers",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Trained over 500 individuals in basic computer skills, internet usage, and digital tools." }]
+        }
+      ]
+    },
+    {
+      "_type": "program",
+      "title": "Tree Plantation Drive 2023",
+      "slug": { "current": "tree-plantation-2023" },
+      "status": "completed",
+      "summary": "Planted 10,000 trees across the region to combat climate change and improve air quality.",
+      "startDate": "2023-07-01",
+      "endDate": "2023-09-30",
+      "location": "Multiple Locations",
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Community-driven initiative that planted 10,000 saplings with 85% survival rate." }]
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "_type": "newsPost",
+      "title": "NGO Receives National Award for Social Impact",
+      "slug": { "current": "national-award-2024" },
+      "date": "2024-10-15T00:00:00.000Z",
+      "author": "Admin Team",
+      "excerpt": "Our organization has been honored with the National Social Impact Award for outstanding contribution to community development.",
+      "tags": ["award", "recognition", "milestone"],
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "We are thrilled to announce that our organization has received the prestigious National Social Impact Award. This recognition validates our commitment to creating meaningful change in communities." }]
+        }
+      ]
+    },
+    {
+      "_type": "newsPost",
+      "title": "New Education Center Opens in Rural District",
+      "slug": { "current": "education-center-opening" },
+      "date": "2024-10-01T00:00:00.000Z",
+      "author": "Programs Team",
+      "excerpt": "A state-of-the-art learning center equipped with modern facilities now serves 200+ students daily.",
+      "tags": ["education", "infrastructure", "milestone"],
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Our newest education center is now operational, providing quality learning environment to children who previously had limited access to educational resources." }]
+        }
+      ]
+    },
+    {
+      "_type": "newsPost",
+      "title": "500 Women Complete Skill Development Training",
+      "slug": { "current": "women-training-completion" },
+      "date": "2024-09-20T00:00:00.000Z",
+      "author": "Training Department",
+      "excerpt": "Another successful batch of women entrepreneurs graduates from our comprehensive skill development program.",
+      "tags": ["women empowerment", "training", "success story"],
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "We celebrate the graduation of 500 women who completed our intensive skill development and entrepreneurship training program. Many have already started their own businesses." }]
+        }
+      ]
+    },
+    {
+      "_type": "newsPost",
+      "title": "Healthcare Camp Serves 1,000+ Patients",
+      "slug": { "current": "healthcare-camp-success" },
+      "date": "2024-09-05T00:00:00.000Z",
+      "author": "Health Team",
+      "excerpt": "Free medical camp provides consultations, medicines, and health education to remote village communities.",
+      "tags": ["healthcare", "community service", "impact"],
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "Our recent healthcare outreach camp successfully served over 1,000 patients, providing free consultations, medicines, and health awareness sessions." }]
+        }
+      ]
+    },
+    {
+      "_type": "newsPost",
+      "title": "Partnership with Tech Company for Digital Education",
+      "slug": { "current": "tech-partnership-announcement" },
+      "date": "2024-08-15T00:00:00.000Z",
+      "author": "Partnerships Team",
+      "excerpt": "Strategic partnership will bring digital learning tools to 50 schools across the region.",
+      "tags": ["partnership", "technology", "education"],
+      "body": [
+        {
+          "_type": "block",
+          "children": [{ "_type": "span", "text": "We are excited to announce our partnership with a leading technology company to provide digital learning infrastructure and training to schools in underserved areas." }]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "_type": "faq",
+      "question": "How can I donate to your organization?",
+      "answer": "You can donate online through our secure donation page using credit/debit cards, UPI, or net banking. We also accept cheques and bank transfers. All donations are tax-deductible under Section 80G.",
+      "order": 1
+    },
+    {
+      "_type": "faq",
+      "question": "Are donations tax-deductible?",
+      "answer": "Yes, we are registered under Section 80G and 12A. Donors can claim tax deductions as per Indian Income Tax Act. We provide donation receipts for all contributions.",
+      "order": 2
+    },
+    {
+      "_type": "faq",
+      "question": "How can I become a volunteer?",
+      "answer": "You can register as a member through our registration page. We welcome volunteers for various programs including education, healthcare, and community development initiatives.",
+      "order": 3
+    },
+    {
+      "_type": "faq",
+      "question": "Where do you operate?",
+      "answer": "We primarily operate in rural and semi-urban areas across multiple states in India, focusing on underserved communities that need support in education, healthcare, and livelihood.",
+      "order": 4
+    },
+    {
+      "_type": "faq",
+      "question": "How are donations utilized?",
+      "answer": "Donations are used for program implementation (70%), administrative costs (20%), and fundraising activities (10%). We maintain complete transparency and publish annual reports.",
+      "order": 5
+    },
+    {
+      "_type": "faq",
+      "question": "Can I visit your project sites?",
+      "answer": "Yes, we welcome visits to our project sites. Please contact us in advance to schedule a visit. We organize regular field visits for donors and stakeholders.",
+      "order": 6
+    },
+    {
+      "_type": "faq",
+      "question": "Do you accept international donations?",
+      "answer": "Yes, we are FCRA registered and can accept international donations. Please contact us for bank details and compliance requirements.",
+      "order": 7
+    },
+    {
+      "_type": "faq",
+      "question": "How can corporates partner with you?",
+      "answer": "We offer various CSR partnership opportunities including program sponsorship, employee volunteering, and skill-based support. Contact our partnerships team for details.",
+      "order": 8
+    },
+    {
+      "_type": "faq",
+      "question": "Do you provide internship opportunities?",
+      "answer": "Yes, we offer internships in various departments including programs, communications, and operations. Check our jobs page for current openings.",
+      "order": 9
+    },
+    {
+      "_type": "faq",
+      "question": "How can I stay updated about your work?",
+      "answer": "Subscribe to our newsletter, follow us on social media, or check our news section regularly for updates on our programs and impact.",
+      "order": 10
+    }
+  ]
+}
