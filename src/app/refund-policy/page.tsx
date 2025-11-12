@@ -1,11 +1,11 @@
 import { Hero } from "@/components/Hero";
+import { Card, CardContent } from "@/components/ui/card";
+import { RefreshCw, AlertTriangle, Clock, FileCheck, Mail } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Refund Policy",
-  description: "Our refund and cancellation policy for donations.",
-};
-
+  description: "Our refund and cancellation po
 export default function RefundPolicyPage() {
   return (
     <>
