@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -42,9 +43,11 @@ export default async function GalleryPage() {
                   <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                     <div className="aspect-video bg-muted relative overflow-hidden">
                       {firstImage ? (
-                        <img
+                        <Image
                           src={urlFor(firstImage.image).width(600).height(400).url()}
                           alt={album.title}
+                          width={600}
+                          height={400}
                           className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
                         />
                       ) : (

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import { Heart, Users, Target, TrendingUp } from "lucide-react";
@@ -74,9 +75,11 @@ export default async function HomePage() {
               <Card key={program._id} className="overflow-hidden">
                 {program.coverImage && (
                   <div className="aspect-video bg-muted relative overflow-hidden">
-                    <img
+                    <Image
                       src={urlFor(program.coverImage).width(600).height(400).url()}
                       alt={program.title}
+                      width={600}
+                      height={400}
                       className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -119,9 +122,11 @@ export default async function HomePage() {
               <Card key={post._id} className="overflow-hidden">
                 {post.heroImage && (
                   <div className="aspect-video bg-muted relative overflow-hidden">
-                    <img
+                    <Image
                       src={urlFor(post.heroImage).width(600).height(400).url()}
                       alt={post.title}
+                      width={600}
+                      height={400}
                       className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -149,36 +154,85 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Mission Statement */}
+      {/* What We Do */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Mahila Swashth Mission is committed to empowering women through comprehensive health education, 
-              accessible healthcare services, and sustainable livelihood programs. We believe that healthy women 
-              create healthy families and thriving communities.
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold mb-6">Empowering Women and Youth for a Better Tomorrow</h2>
+            <p className="text-lg text-muted-foreground">
+              At Mahila Swashth Mission, we believe that true progress begins with empowering women and youth – 
+              the real changemakers of our society. Through our various programs and initiatives, we work to build 
+              confidence, independence, and awareness among individuals across rural and urban India.
             </p>
-            <div className="grid gap-6 md:grid-cols-3 mt-12">
+          </div>
+
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Our Focus Areas</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl mb-3">🏥</div>
-                  <h3 className="font-semibold mb-2">Health Services</h3>
-                  <p className="text-sm text-muted-foreground">Free health camps, screenings, and awareness programs</p>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">👩‍⚕️</div>
+                  <h4 className="font-semibold text-lg mb-3">Women Empowerment</h4>
+                  <p className="text-sm text-muted-foreground">
+                    We conduct awareness programs, workshops, and training sessions to educate women about their 
+                    rights, health, and opportunities. Our goal is to make every woman strong, self-reliant, and 
+                    capable of leading a dignified life.
+                  </p>
                 </CardContent>
               </Card>
+
               <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl mb-3">📚</div>
-                  <h3 className="font-semibold mb-2">Education</h3>
-                  <p className="text-sm text-muted-foreground">Health literacy and skill development training</p>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">🎓</div>
+                  <h4 className="font-semibold text-lg mb-3">Youth Development</h4>
+                  <p className="text-sm text-muted-foreground">
+                    We engage the youth in community-driven activities that promote education, skill-building, and 
+                    employment opportunities – helping them become responsible citizens and future leaders.
+                  </p>
                 </CardContent>
               </Card>
+
               <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl mb-3">💼</div>
-                  <h3 className="font-semibold mb-2">Livelihood</h3>
-                  <p className="text-sm text-muted-foreground">Vocational training and entrepreneurship support</p>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">🏥</div>
+                  <h4 className="font-semibold text-lg mb-3">Health & Hygiene Awareness</h4>
+                  <p className="text-sm text-muted-foreground">
+                    We actively spread awareness about menstrual hygiene and women&apos;s health through our campaigns, 
+                    ensuring access to safe and affordable hygiene products for all.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">📚</div>
+                  <h4 className="font-semibold text-lg mb-3">Education & Awareness</h4>
+                  <p className="text-sm text-muted-foreground">
+                    We promote education for underprivileged children and women, emphasizing literacy, digital learning, 
+                    and life skills that open doors to a brighter future.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">🤝</div>
+                  <h4 className="font-semibold text-lg mb-3">Community Development</h4>
+                  <p className="text-sm text-muted-foreground">
+                    By uniting local communities, volunteers, and social groups, we encourage collective action towards 
+                    social change, sustainability, and equality.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">💼</div>
+                  <h4 className="font-semibold text-lg mb-3">Livelihood Support</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Vocational training and entrepreneurship support to help women achieve economic independence and 
+                    financial security.
+                  </p>
                 </CardContent>
               </Card>
             </div>

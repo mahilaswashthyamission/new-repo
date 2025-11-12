@@ -29,7 +29,7 @@ export default function AboutPage() {
                 align="left"
               />
               <p className="text-muted-foreground mb-4">
-                Founded in 2015, Mahila Swashth Mission emerged from the recognition that women's health is fundamental 
+                Founded in 2015, Mahila Swashth Mission emerged from the recognition that women&apos;s health is fundamental 
                 to family and community well-being. We work in rural and semi-urban areas where access to quality 
                 healthcare and health education is limited.
               </p>
@@ -39,13 +39,13 @@ export default function AboutPage() {
                 entire communities thrive.
               </p>
               <p className="text-muted-foreground">
-                Through partnerships with local communities, healthcare providers, and government agencies, we've 
+                Through partnerships with local communities, healthcare providers, and government agencies, we&apos;ve 
                 reached over 25,000 women across 200+ villages, conducting health camps, awareness programs, and 
                 skill development workshops.
               </p>
             </div>
             <div className="bg-muted/50 rounded-lg p-8 h-[400px] flex items-center justify-center">
-              <p className="text-muted-foreground text-center">Women's Health Program Image</p>
+              <p className="text-muted-foreground text-center">Women&apos;s Health Program Image</p>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-3">Our Values</h3>
                 <p className="text-muted-foreground">
                   Compassion, dignity, empowerment, and community participation guide our work. We believe in 
-                  culturally sensitive, evidence-based approaches that respect women's choices and agency.
+                  culturally sensitive, evidence-based approaches that respect women&apos;s choices and agency.
                 </p>
               </CardContent>
             </Card>

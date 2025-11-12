@@ -41,7 +41,7 @@ export default function TermsPage() {
 
             <h2>Disclaimer</h2>
             <p>
-              This website and its content are provided "as is" without any representations or warranties. We do not warrant that the website will be uninterrupted or error-free.
+              This website and its content are provided &quot;as is&quot; without any representations or warranties. We do not warrant that the website will be uninterrupted or error-free.
             </p>
 
             <h2>Limitation of Liability</h2>

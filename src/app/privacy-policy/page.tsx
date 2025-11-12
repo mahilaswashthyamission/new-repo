@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
 
             <h2>Introduction</h2>
             <p>
-              NGO Organization ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+              NGO Organization (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
 
             <h2>Information We Collect</h2>

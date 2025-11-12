@@ -4,13 +4,24 @@ import { createClient } from "@supabase/supabase-js";
 import { sendEmail } from "@/lib/email";
 import { registrationSchema, type RegistrationFormData } from "@/lib/validations";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+
+function getSupabaseAdmin() {
+  if (!supabaseUrl || !supabaseServiceKey) {
+    return null;
+  }
+  return createClient(supabaseUrl, supabaseServiceKey);
+}
 
 export async function submitRegistration(data: RegistrationFormData) {
   try {
     const validated = registrationSchema.parse(data);
+    const supabase = getSupabaseAdmin();
+
+    if (!supabase) {
+      return { success: false, error: "Database service is not configured" };
+    }
 
     // Create user account in Supabase Auth
     const { data: authData, error: authError } = await supabase.auth.admin.createUser({

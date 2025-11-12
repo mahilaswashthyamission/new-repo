@@ -109,13 +109,13 @@ export default function ContactPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
-                <CardDescription>Fill out the form below and we'll get back to you</CardDescription>
+                <CardDescription>Fill out the form below and we&apos;ll get back to you</CardDescription>
               </CardHeader>
               <CardContent>
                 {isSuccess && (
                   <div className="mb-6 p-4 bg-primary/10 border border-primary rounded-md flex items-center gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <p className="text-sm">Message sent successfully! We'll get back to you soon.</p>
+                    <p className="text-sm">Message sent successfully! We&apos;ll get back to you soon.</p>
                   </div>
                 )}
 

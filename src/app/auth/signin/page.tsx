@@ -37,6 +37,12 @@ export default function SignInPage() {
     setIsSubmitting(true);
     setError(null);
 
+    if (!supabase) {
+      setError("Authentication service is not configured");
+      setIsSubmitting(false);
+      return;
+    }
+
     const { error } = await supabase.auth.signInWithPassword({
       email: data.email,
       password: data.password,
@@ -102,7 +108,7 @@ export default function SignInPage() {
 
                 <div className="text-center text-sm">
                   <p className="text-muted-foreground">
-                    Don't have an account?{" "}
+                    Don&apos;t have an account?{" "}
                     <Link href="/registration" className="text-primary hover:underline">
                       Register here
                     </Link>

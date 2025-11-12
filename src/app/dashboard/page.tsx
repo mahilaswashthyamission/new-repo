@@ -15,6 +15,12 @@ export default function DashboardPage() {
 
   useEffect(() => {
     const checkUser = async () => {
+      if (!supabase) {
+        router.push("/auth/signin");
+        setLoading(false);
+        return;
+      }
+
       const { data: { user } } = await supabase.auth.getUser();
       
       if (!user) {
@@ -29,7 +35,9 @@ export default function DashboardPage() {
   }, [router]);
 
   const handleSignOut = async () => {
-    await supabase.auth.signOut();
+    if (supabase) {
+      await supabase.auth.signOut();
+    }
     router.push("/");
   };
 

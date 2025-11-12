@@ -98,7 +98,7 @@ export default function HowToApplyPage() {
                     <strong>Review before submission:</strong> Double-check all information before submitting
                   </li>
                   <li className="text-sm">
-                    <strong>Confirmation:</strong> You'll receive a confirmation email after successful submission
+                    <strong>Confirmation:</strong> You&apos;ll receive a confirmation email after successful submission
                   </li>
                 </ol>
               </CardContent>

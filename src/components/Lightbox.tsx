@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { urlFor } from "@/lib/sanity";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -48,9 +49,11 @@ export function Lightbox({ images }: LightboxProps) {
             onClick={() => openLightbox(idx)}
             className="group relative aspect-square overflow-hidden rounded-lg bg-muted focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
           >
-            <img
+            <Image
               src={urlFor(item.image).width(400).height(400).url()}
               alt={item.caption || `Image ${idx + 1}`}
+              width={400}
+              height={400}
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             {item.caption && (
@@ -97,9 +100,11 @@ export function Lightbox({ images }: LightboxProps) {
 
               {/* Image */}
               <div className="relative w-full h-full flex items-center justify-center p-12">
-                <img
+                <Image
                   src={urlFor(images[selectedIndex].image).width(1920).height(1080).url()}
                   alt={images[selectedIndex].caption || `Image ${selectedIndex + 1}`}
+                  width={1920}
+                  height={1080}
                   className="max-w-full max-h-full object-contain"
                 />
               </div>

@@ -9,7 +9,7 @@ export default function NotFound() {
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg text-muted-foreground mb-8">
-            The page you're looking for doesn't exist or has been moved.
+            The page you&apos;re looking for doesn&apos;t exist or has been moved.
           </p>
           <Button asChild size="lg">
             <Link href="/">Go Home</Link>

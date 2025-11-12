@@ -77,7 +77,7 @@ export default function JobApplyPage() {
             <CardHeader>
               <CardTitle>Application Form</CardTitle>
               <CardDescription>
-                Please provide accurate information. We'll contact you if your profile matches.
+                Please provide accurate information. We&apos;ll contact you if your profile matches.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -135,7 +135,7 @@ export default function JobApplyPage() {
                   <Textarea
                     id="coverMessage"
                     {...register("coverMessage", { required: "Cover message is required" })}
-                    placeholder="Tell us why you're a good fit for this role..."
+                    placeholder="Tell us why you&apos;re a good fit for this role..."
                     rows={5}
                   />
                   {errors.coverMessage && (
