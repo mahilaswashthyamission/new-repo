@@ -8,6 +8,7 @@ import { Calendar, User } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
+import { portableTextComponents } from "@/components/PortableTextComponents";
 
 async function getNewsPost(slug: string) {
   return await client.fetch(
@@ -79,7 +80,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
 
             {post.body && (
               <div className="prose prose-lg max-w-none">
-                <PortableText value={post.body} />
+                <PortableText value={post.body} components={portableTextComponents} />
               </div>
             )}
           </div>

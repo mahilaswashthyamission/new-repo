@@ -6,6 +6,7 @@ import { Calendar, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
+import { portableTextComponents } from "@/components/PortableTextComponents";
 
 async function getProgram(slug: string) {
   return await client.fetch(
@@ -65,7 +66,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
             {program.body && (
               <div className="prose prose-lg max-w-none mb-12">
-                <PortableText value={program.body} />
+                <PortableText value={program.body} components={portableTextComponents} />
               </div>
             )}
 

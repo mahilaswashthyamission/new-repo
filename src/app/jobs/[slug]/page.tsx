@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
+import { portableTextComponents } from "@/components/PortableTextComponents";
 
 async function getJob(slug: string) {
   return await client.fetch(
@@ -60,7 +61,7 @@ export default async function JobDetailPage({ params }: { params: Promise<{ slug
 
                 {job.description && (
                   <div className="prose prose-lg max-w-none mb-8">
-                    <PortableText value={job.description} />
+                    <PortableText value={job.description} components={portableTextComponents} />
                   </div>
                 )}
 
