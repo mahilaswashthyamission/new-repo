@@ -63,7 +63,7 @@ export async function submitRegistration(data: RegistrationFormData) {
 
     // Send email to organization
     await sendEmail({
-      to: process.env.ORG_EMAIL || "info@ngo.org",
+      to: process.env.ORG_EMAIL || "help@mahilaswashthyamission.in",
       subject: "New Membership Registration",
       html: `
         <h2>New Membership Registration</h2>

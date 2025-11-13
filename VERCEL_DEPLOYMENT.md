@@ -97,9 +97,9 @@ RESEND_API_KEY=re_xxxxx
 
 ### Organization Details
 ```env
-ORG_PHONE=+919876543210
-ORG_WHATSAPP=919876543210
-ORG_EMAIL=info@mahilaswashth.org
+ORG_PHONE=+919557513058
+ORG_WHATSAPP=919557513058
+ORG_EMAIL=help@mahilaswashthyamission.in
 MAPS_EMBED_URL=https://www.google.com/maps/embed?pb=xxxxx
 ```
 

@@ -43,14 +43,14 @@ export default async function JobsPage() {
                     </Badge>
                   </div>
                   <CardTitle>{job.title}</CardTitle>
-                  <CardDescription className="space-y-1">
-                    {job.location && (
-                      <div className="flex items-center gap-1">
+                  {job.location && (
+                    <CardDescription>
+                      <span className="flex items-center gap-1">
                         <MapPin className="h-3 w-3" />
                         <span>{job.location}</span>
-                      </div>
-                    )}
-                  </CardDescription>
+                      </span>
+                    </CardDescription>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <Button asChild className="w-full">

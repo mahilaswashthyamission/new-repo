@@ -4,8 +4,8 @@ import { Phone, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function FloatingCallWhatsApp() {
-  const phone = process.env.NEXT_PUBLIC_ORG_PHONE || "+919876543210";
-  const whatsapp = process.env.NEXT_PUBLIC_ORG_WHATSAPP || "919876543210";
+  const phone = process.env.NEXT_PUBLIC_ORG_PHONE || "+919557513058";
+  const whatsapp = process.env.NEXT_PUBLIC_ORG_WHATSAPP || "919557513058";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 md:hidden">

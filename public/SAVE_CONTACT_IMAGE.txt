@@ -1,0 +1,16 @@
+IMPORTANT: Save the contact hero image
+
+Please save the contact illustration image as:
+public/contact-hero.png
+
+The image should be the isometric illustration showing:
+- A phone/mobile device with "CONTACT US" text
+- A customer service representative with headset
+- Contact icons (phone, email, message)
+- "24h" support badge
+- Green color scheme
+
+This image is used in the Contact Us page hero section.
+
+Recommended dimensions: 500x500px or larger (square aspect ratio)
+Format: PNG with transparent background preferred

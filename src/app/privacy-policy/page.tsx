@@ -248,19 +248,19 @@ export default function PrivacyPolicyPage() {
                       <p className="mt-2">
                         <strong>Email:</strong>{" "}
                         <a 
-                          href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "info@mahilaswashth.org"}`}
+                          href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}`}
                           className="text-primary hover:underline"
                         >
-                          {process.env.NEXT_PUBLIC_ORG_EMAIL || "info@mahilaswashth.org"}
+                          {process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}
                         </a>
                       </p>
                       <p>
                         <strong>Phone:</strong>{" "}
                         <a 
-                          href={`tel:${process.env.NEXT_PUBLIC_ORG_PHONE || "+919876543210"}`}
+                          href={`tel:${process.env.NEXT_PUBLIC_ORG_PHONE || "+919557513058"}`}
                           className="text-primary hover:underline"
                         >
-                          {process.env.NEXT_PUBLIC_ORG_PHONE || "+91 98765 43210"}
+                          {process.env.NEXT_PUBLIC_ORG_PHONE || "+91 95575 13058"}
                         </a>
                       </p>
                     </div>

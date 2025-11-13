@@ -16,9 +16,9 @@ export function generateOrganizationSchema() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: process.env.ORG_PHONE || "+919876543210",
+      telephone: process.env.ORG_PHONE || "+919557513058",
       contactType: "customer service",
-      email: process.env.ORG_EMAIL || "info@ngo.org",
+      email: process.env.ORG_EMAIL || "help@mahilaswashthyamission.in",
     },
     sameAs: [
       "https://facebook.com/ngo",

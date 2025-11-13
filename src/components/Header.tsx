@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -58,8 +59,16 @@ export function Header() {
         </button>
 
         {/* Logo - Center on mobile, left on desktop */}
-        <Link href="/" className="flex items-center space-x-2 md:mr-auto">
-          <span className="text-base md:text-lg font-bold text-primary">Mahila Swashth Mission</span>
+        <Link href="/" className="flex items-center md:mr-auto">
+          <Image
+            src="/LOGO01.png"
+            alt="Mahila Swashth Mission"
+            width={200}
+            height={56}
+            className="h-14 w-auto"
+            style={{ height: '3.5rem' }}
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -128,7 +137,13 @@ export function Header() {
           >
             {/* Header - Fixed */}
             <div className="flex items-center justify-between p-4 border-b bg-background" style={{ flexShrink: 0 }}>
-              <span className="font-bold text-base text-primary leading-tight">Mahila Swashth Mission</span>
+              <Image
+                src="/LOGO01.png"
+                alt="Mahila Swashth Mission"
+                width={150}
+                height={40}
+                className="h-8 w-auto"
+              />
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 hover:bg-accent rounded-md transition-colors -mr-2"

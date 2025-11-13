@@ -210,11 +210,11 @@ export default function TermsPage() {
                     <div className="bg-muted/50 p-4 rounded-lg mt-4">
                       <p><strong>Mahila Swashth Mission</strong></p>
                       <p className="mt-2">
-                        Email: <a href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "info@ngo.org"}`} className="text-primary hover:underline">
-                          {process.env.NEXT_PUBLIC_ORG_EMAIL || "info@ngo.org"}
+                        Email: <a href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}`} className="text-primary hover:underline">
+                          {process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}
                         </a>
                       </p>
-                      <p>Phone: {process.env.NEXT_PUBLIC_ORG_PHONE || "+91 98765 43210"}</p>
+                      <p>Phone: {process.env.NEXT_PUBLIC_ORG_PHONE || "+91 95575 13058"}</p>
                     </div>
                   </div>
                 </CardContent>

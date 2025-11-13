@@ -56,9 +56,9 @@ SANITY_READ_TOKEN=your_read_token
 SANITY_WRITE_TOKEN=your_write_token
 
 # Your details
-ORG_PHONE=+919876543210
-ORG_WHATSAPP=919876543210
-ORG_EMAIL=info@yourorg.org
+ORG_PHONE=+919557513058
+ORG_WHATSAPP=919557513058
+ORG_EMAIL=help@mahilaswashthyamission.in
 SITE_URL=http://localhost:3000
 REVALIDATE_SECRET=any_random_string_here
 \`\`\`

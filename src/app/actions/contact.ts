@@ -21,7 +21,7 @@ export async function submitContact(data: ContactFormData) {
 
     // Send email to organization
     await sendEmail({
-      to: process.env.ORG_EMAIL || "info@ngo.org",
+      to: process.env.ORG_EMAIL || "help@mahilaswashthyamission.in",
       subject: `Contact Form: ${validated.subject}`,
       html: `
         <h2>New Contact Form Submission</h2>

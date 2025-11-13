@@ -52,8 +52,8 @@ export default function RefundPolicyPage() {
             <h2>Contact Us</h2>
             <p>
               For refund requests or questions, please contact us at{" "}
-              <a href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "info@ngo.org"}`}>
-                {process.env.NEXT_PUBLIC_ORG_EMAIL || "info@ngo.org"}
+              <a href={`mailto:${process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}`}>
+                {process.env.NEXT_PUBLIC_ORG_EMAIL || "help@mahilaswashthyamission.in"}
               </a>
             </p>
           </div>
