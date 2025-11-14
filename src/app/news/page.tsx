@@ -2,7 +2,8 @@ import { Hero } from "@/components/Hero";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { client } from "@/lib/sanity";
+import Image from "next/image";
+import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -34,10 +35,18 @@ export default async function NewsPage() {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {news.map((post: any) => (
-              <Card key={post._id} className="flex flex-col">
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground">Image</p>
-                </div>
+              <Card key={post._id} className="flex flex-col overflow-hidden">
+                {post.heroImage && (
+                  <div className="aspect-video bg-muted relative overflow-hidden">
+                    <Image
+                      src={urlFor(post.heroImage).width(600).height(400).url()}
+                      alt={post.title}
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <CardHeader>
                   <CardDescription>
                     {formatDate(post.date)}

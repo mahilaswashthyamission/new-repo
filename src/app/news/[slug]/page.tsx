@@ -2,10 +2,11 @@ import { Hero } from "@/components/Hero";
 import { Badge } from "@/components/ui/badge";
 import { JsonLd } from "@/components/JsonLd";
 import { generateArticleSchema } from "@/lib/json-ld";
-import { client } from "@/lib/sanity";
+import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import { Calendar, User } from "lucide-react";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 import { portableTextComponents } from "@/components/PortableTextComponents";
@@ -55,6 +56,19 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            {post.heroImage && (
+              <div className="aspect-video bg-muted relative overflow-hidden rounded-lg mb-8">
+                <Image
+                  src={urlFor(post.heroImage).width(1200).height(675).url()}
+                  alt={post.title}
+                  width={1200}
+                  height={675}
+                  className="object-cover w-full h-full"
+                  priority
+                />
+              </div>
+            )}
+
             <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
