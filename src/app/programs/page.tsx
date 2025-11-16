@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
-import { client } from "@/lib/sanity";
+import Image from "next/image";
+import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -89,6 +90,17 @@ export default async function ProgramsPage() {
 function ProgramCard({ program }: { program: any }) {
   return (
     <Card className="overflow-hidden">
+      {program.coverImage && (
+        <div className="aspect-video bg-muted relative overflow-hidden">
+          <Image
+            src={urlFor(program.coverImage).width(600).height(400).url()}
+            alt={program.title}
+            width={600}
+            height={400}
+            className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      )}
       <CardHeader>
         <div className="mb-2">
           <Badge variant={program.status === "upcoming" ? "default" : "secondary"}>
