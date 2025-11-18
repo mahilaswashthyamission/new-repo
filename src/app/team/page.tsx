@@ -39,7 +39,7 @@ export default async function TeamPage() {
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="mb-4">
                 Mahila Swashthya Mission is dedicated to empowering women and improving healthcare access 
-                in underserved communities. Our organization focuses on women's health, education, and 
+                in underserved communities. Our organization focuses on women&apos;s health, education, and 
                 socio-economic development through comprehensive programs and initiatives.
               </p>
               <p className="mb-4">
@@ -84,7 +84,7 @@ export default async function TeamPage() {
             <h2 className="text-2xl font-bold mb-4">Meet Our Dedicated Team</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Our diverse team brings together expertise from healthcare, social work, education, and community development 
-              to create meaningful change in women's health and empowerment.
+              to create meaningful change in women&apos;s health and empowerment.
             </p>
           </div>
 
