@@ -1,9 +1,11 @@
 import { Hero } from "@/components/Hero";
 import { Badge } from "@/components/ui/badge";
-import { client } from "@/lib/sanity";
+import { Lightbox } from "@/components/Lightbox";
+import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
 import { Calendar, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 import { portableTextComponents } from "@/components/PortableTextComponents";
@@ -43,6 +45,19 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            {program.coverImage && (
+              <div className="aspect-video bg-muted relative overflow-hidden rounded-lg mb-8">
+                <Image
+                  src={urlFor(program.coverImage).width(1200).height(675).url()}
+                  alt={program.title}
+                  width={1200}
+                  height={675}
+                  className="object-cover w-full h-full"
+                  priority
+                />
+              </div>
+            )}
+
             <div className="flex flex-wrap gap-4 mb-8">
               <Badge variant={program.status === "upcoming" ? "default" : "secondary"} className="text-sm">
                 {program.status}
@@ -72,16 +87,11 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
 
             {program.gallery && program.gallery.length > 0 && (
               <div>
-                <h2 className="text-2xl font-bold mb-6">Gallery</h2>
-                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  {program.gallery.map((image: any, idx: number) => (
-                    <div key={idx} className="aspect-video bg-muted rounded-lg overflow-hidden">
-                      <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                        Image {idx + 1}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <h2 className="text-2xl font-bold mb-6">Gallery ({program.gallery.length})</h2>
+                <Lightbox images={program.gallery.map((image: any, idx: number) => ({
+                  image,
+                  caption: `${program.title} - Image ${idx + 1}`
+                }))} />
               </div>
             )}
           </div>

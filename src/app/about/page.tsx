@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function AboutPage() {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div>
+          <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
+            <div className="order-2 lg:order-1">
               <SectionHeading
                 eyebrow="Who We Are"
                 title="Transforming Lives Through Women's Health"
@@ -44,8 +45,17 @@ export default function AboutPage() {
                 skill development workshops.
               </p>
             </div>
-            <div className="bg-muted/50 rounded-lg p-8 h-[400px] flex items-center justify-center">
-              <p className="text-muted-foreground text-center">Women&apos;s Health Program Image</p>
+            <div className="relative rounded-lg overflow-hidden shadow-lg order-1 lg:order-2">
+              <div className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3]">
+                <Image
+                  src="/women-health.png"
+                  alt="Women's Health Program - Mahila Swashthya Mission"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
