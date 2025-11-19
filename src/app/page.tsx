@@ -1,4 +1,5 @@
 import { HeroSlideshow } from "@/components/HeroSlideshow";
+import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -239,6 +240,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Infinite Carousel */}
+      <InfiniteCarousel />
 
       {/* CTA Band */}
       <section className="py-16 bg-primary text-primary-foreground">
