@@ -10,7 +10,7 @@ import { generateOrganizationSchema } from "@/lib/json-ld";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || 'https://mahilaswashth.org'),
+  metadataBase: new URL(process.env.SITE_URL || 'https://mahilaswashthyamission.in'),
   title: {
     default: "Mahila Swashth Mission - Making a Difference",
     template: "%s | Mahila Swashth Mission",

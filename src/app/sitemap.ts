@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { client } from "@/lib/sanity";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.SITE_URL || "https://ngo.org";
+  const siteUrl = process.env.SITE_URL || "https://mahilaswashthyamission.in";
 
   // Fetch dynamic content
   const programs = await client.fetch(`*[_type == "program"]{ slug, _updatedAt }`);
