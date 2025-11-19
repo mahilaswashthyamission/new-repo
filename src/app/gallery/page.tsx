@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import { SupabaseGallery } from "@/components/SupabaseGallery";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/lib/utils";
@@ -32,6 +33,13 @@ export default async function GalleryPage() {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
+          {/* Supabase Gallery */}
+          <SupabaseGallery />
+
+          {/* Albums from Sanity */}
+          {albums.length > 0 && (
+            <h2 className="text-2xl font-bold mb-6">Photo Albums</h2>
+          )}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {albums.map((album: any) => {
               const firstImage = album.media?.find((item: any) => item.type === 'image' && item.image);
